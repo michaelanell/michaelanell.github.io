@@ -21,8 +21,8 @@
 
     #container {
         display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 300fr));
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         align-content: center;
     }
 
