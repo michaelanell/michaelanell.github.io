@@ -22,6 +22,10 @@ footer {
     text-align: center;
 }
 
+img {
+    max-width: 400px;
+}
+
 .site-inner {
     max-width: 800px;
     margin: 20px auto;
