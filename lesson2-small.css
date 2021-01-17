@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Righteous&display=swap');
+
+body{
+    font-family: 'Quicksand', sans-serif;
+ }
+
+h1, h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #B0E4EA;
+    padding: 10px 20px;
+    text-align: center;
+
+}
+
+footer {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    background-color: #B0E4EA;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.site-inner {
+    max-width: 800px;
+    margin: 20px auto;
+
+}
