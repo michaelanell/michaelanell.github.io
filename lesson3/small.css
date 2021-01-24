@@ -2,7 +2,7 @@
 
 nav {
     
-    background-color: #35606B;
+    background-color:#527CB3;
     text-align: center;
     border-radius: 10px;
     padding: .5rem;
@@ -27,10 +27,15 @@ nav ul li a {
 
 }
 
+.colors-list li, .text-list li{
+    list-style-type: none;
+}
 
 .site-inner {
     max-width: 900px;
     margin: 0 auto;
+    border-radius: 10px;
+
 }
 
 .logo {
@@ -51,6 +56,7 @@ h2 {
 h1, h2, h3 {
     text-align: center;
    font-family: 'Rancho', cursive;
+   color: #344C6B;
 }
 
 body {
@@ -69,7 +75,7 @@ img {
 footer {
     font-family: 'Raleway', sans-serif;
     color: #fff;
-    background-color: #35606B;
+    background-color:#527CB3;
     padding: 10px 10px;
     text-align: center;
     border-radius: 10px;
