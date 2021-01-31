@@ -36,9 +36,3 @@ function toggleMenu() {
     }
     var currentdate = setInterval(date, onload);
     
-    function lastUpdate(){
-        let update = document.lastModified;
-        document.getElementById("lastModified").innerHTML = " " + update;
-    }
-    
-    var modified = setInterval(lastUpdate, onload);
