@@ -1,18 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Rancho&display=swap');
 
 body{
     font-family: 'Quicksand', sans-serif;
  }
 
-h1, h2 {
-    font-family: 'Righteous', cursive;
-    font-size: 1.5rem;
-    color: #fff;
-    background-color: #B0E4EA;
-    padding: 10px 20px;
-    text-align: center;
+.site-inner {
+    max-width: 800px;
+    margin: 20px auto;
 }
 
+ h1 {
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+   font-family: 'Rancho', cursive;
+   color: #344C6B;
+}
 nav ul li {
     list-style: none;
 }
@@ -41,39 +52,25 @@ nav ul li {
 	background-color: #527CB3;
 }
 
-h3 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-h4 {
-    font-family: 'Quicksand', sans-serif; 
-    font-size: 1.25rem;
-    text-align: center;
-}
-
-footer {
-    font-family: 'Quicksand', sans-serif;
-    color: #fff;
-    background-color: #B0E4EA;
-    padding: 10px 10px;
-    text-align: center;
-}
-
-img {
-    max-width: 300px;
+ img {
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 50%;
+    padding: 2rem;
 }
 
 .logo {
-    max-width: 60px;
+    max-width: 64px;
+    padding: 0px;
 }
 
-.site-inner {
-    max-width: 800px;
-    margin: 20px auto;
 
+footer {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    background-color:#527CB3;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 10px;
 }
