@@ -35,6 +35,10 @@
     height: 300px;
 }
 
+.article-div {
+	display: block;
+}
+
 .article-img {
 	float: right;
 }
