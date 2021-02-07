@@ -28,11 +28,19 @@ function toggleMenu() {
         "December",
     ];
     
-    let d = new Date();
+     let d = new Date();
     let dayName = daynames[d.getDay()];
     let monthName = month[d.getMonth()];
     let fulldate = dayName + ", " + monthName + " " + d.getDate() + ", " + d.getFullYear();
     document.getElementById("currentdate").textContent = fulldate; 
     }
     var currentdate = setInterval(date, onload);
+
+    window.onload = function displayBanner() {
+        let day = new Date();
+        let dayOfWeek = day.getDay();
+        if (dayOfWeek != 5 ) {
+            document.getElementsByClassName("pancakes-banner").classList.toggle("hide-banner");
+        }
+    }
     

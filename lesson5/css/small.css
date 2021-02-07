@@ -23,6 +23,18 @@
     text-align: left;
 }
 
+.pancakes-banner {
+    background-color: #5BB682;
+    padding: 15px;
+    text-align: center;
+    font-style: bold;
+}
+
+.hide-banner {
+    display: none;
+}
+
+
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -35,7 +47,7 @@ body {
 
 nav {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 100%;
     background-color: #527CB3;
 }
 
@@ -151,7 +163,6 @@ h3, h4 {
     grid-template-columns: 50px 300px;
     padding-left: 20px;
 }
-
 
 .contact-img2 {
     grid-column: 1;

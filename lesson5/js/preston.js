@@ -37,3 +37,10 @@ function toggleMenu() {
     }
     var currentdate = setInterval(date, onload);
     
+    window.onload = function displayBanner() {
+        let day = new Date();
+        let dayOfWeek = day.getDay();
+        if (dayOfWeek != 5 ) {
+            document.getElementsByClassName("pancakes-banner")[0].classList.toggle("hide-banner");
+        }
+    }
