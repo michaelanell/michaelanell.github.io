@@ -14,12 +14,12 @@
 }
 
 .motto {
-    grid-row: 1fr;
+    grid-row: auto;
     grid-template-columns: 1fr;
 }
 
 .logo-heading {
-    grid-column: 1fr 1fr;
+    grid-column: auto;
     text-align: left;
 }
 
@@ -127,7 +127,7 @@ h4 {
 
 .article-div {
     display: grid;
-    grid-template-columns: 1 fr;
+    grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
 }
 
