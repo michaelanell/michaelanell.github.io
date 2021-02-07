@@ -19,7 +19,6 @@
     }
     
     .weather-summery {
-        
         position: absolute;
         top: 25%;
         left: 100px;
@@ -41,5 +40,9 @@
      .temperatures {
         margin-left: auto;
         margin-right: auto;  
+     }
+
+     .article-img {
+         width: 500px;
      }
 }
