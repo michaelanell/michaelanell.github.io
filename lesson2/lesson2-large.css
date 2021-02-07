@@ -2,10 +2,10 @@
     .site-inner {
         max-width: 1500px;
         margin: 20px auto;
-    
+
     }
 
-    
+
     #container {
         display: grid;
         grid-gap: 20px;
