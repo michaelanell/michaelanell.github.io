@@ -1,12 +1,12 @@
-alert("hello");
+
 function calculateWindChill(){
-    var temp = parseInt(document.getElementById('temperature').value);
-    var windSpeed = parseInt(document.getElementById('Wind-Speed').value);
+    var temp = parseFloat(document.getElementById('temperature').innerHTML);
+    var windSpeed = parseFloat(document.getElementById('wind-Speed').innerHTML);
     if (temp <= 10 && windSpeed >= 3) {
         let r = windChill(temp, windSpeed);
-        document.getElementById('WindChill').innerHTML = r; 
+        document.getElementById('windChill').innerHTML = r; 
     } else {
-        document.getElementById('WindChill').innerHTML = "N/A"; 
+        document.getElementById('windChill').innerHTML = "N/A"; 
     }
 }
 function windChill(tempF, speed){
