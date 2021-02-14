@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Righteous&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Righteous&display=swap');*/
 
-body{
+body {
     font-family: 'Quicksand', sans-serif;
- }
+}
 
-h1, h2 {
-    font-family: 'Righteous', cursive;
+h1,
+h2 {
+    font-family: 'Righteous', sans-serif;
     font-size: 1.5rem;
     color: #fff;
     background-color: #0C7BE8;
@@ -18,7 +19,7 @@ h1, h2 {
     background-color: #fff;
 }
 
-ul li {  
+ul li {
     color: #333;
 }
 
@@ -28,8 +29,8 @@ ul li {
 }
 
 #profile-image {
- margin: 20px;
- box-shadow: 10px 10px 5px #D3D3D3;
+    margin: 20px;
+    box-shadow: 10px 10px 5px #D3D3D3;
 }
 
 footer {
@@ -40,7 +41,8 @@ footer {
     text-align: center;
 }
 
-#lastModified, #currentdate {
+#lastModified,
+#currentdate {
     font-family: 'Quicksand', sans-serif;
     color: #fff;
 }
