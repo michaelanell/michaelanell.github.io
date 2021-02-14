@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Rancho&display=swap');
+
+.heading-div {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.logo {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    max-width: 64px;
+    padding: 0px;
+}
+
+.motto {
+    grid-row: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.logo-heading {
+    grid-column: 2;
+    text-align: left;
+}
+
+.pancakes-banner {
+    background-color: #5BB682;
+    padding: 15px;
+    text-align: center;
+    font-style: bold;
+}
+
+.hide-banner {
+    display: none;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.site-inner {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #527CB3;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #fff;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.navigation a:hover {
+    color: #75B1FF;
+    background-color: #355073;
+    font-weight: 600;
+
+}
+
+.active {
+    background-color: #71AAF5;
+}
+
+.responsive li {
+    display: block;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+    font-family: 'Rancho', sans-serif;
+    color: #344C6B;
+}
+
+h3,
+h4 {
+    text-align: 1.5rem;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.forecast-title {
+    background-color: #5BB6DE;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.forecast-div {
+    display: none;
+}
+
+.article-div {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+}
+
+.article-p {
+    grid-row: 1;
+    padding-left: 20px;
+}
+
+.article-img {
+    grid-row: 2;
+    width: 100%;
+}
+
+.contact-img {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-item1 {
+    display: grid;
+    grid-template-columns: 50px 400px;
+    padding-left: 20px;
+}
+
+.contact-img1 {
+    grid-column: 1;
+}
+
+.contact-mail {
+    grid-column: 2;
+    text-align: left;
+}
+
+.contact-item2 {
+    display: grid;
+    grid-template-columns: 50px 300px;
+    padding-left: 20px;
+}
+
+.contact-img2 {
+    grid-column: 1;
+
+}
+
+.contact-phone {
+    grid-column: 2;
+    text-align: left;
+}
+
+footer {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    background-color: #527CB3;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
