@@ -1,4 +1,4 @@
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 50em) {
     .site-inner {
         max-width: 1000px;
         margin: 20px auto;
@@ -46,4 +46,18 @@
     .article-img {
         width: 500px;
     }
+
+    /* Gallery Grid */
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        align-items: center;
+        justify-items: center;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+
 }

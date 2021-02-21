@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gallery page for Michaela Nell repository for CIT 230">
+    <title>Gallery</title>
+    <link href="../lesson6/css/small.css" rel="stylesheet" type="text/css">
+    <link href="../lesson6/css/medium.css" rel="stylesheet" type="text/css">
+    <link href="../lesson6/css/large.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="site-inner">
+        <header>
+
+            <div class="heading-div">
+                <h2 class="logo-heading">Got Weather?</h2>
+                <img class="logo" src="../logo.png" alt="Site Logo">
+                <p class="motto">How's the weather up there?</p>
+            </div>
+        </header>
+        <div class="pancakes-banner" class="hide-banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <nav>
+            <ul class="navigation" class="responsive">
+                <li><button onclick="toggleMenu()">&#9776</button></li>
+                <li><a class="" href="">Home</a></li>
+                <li><a href="preston-5.html">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li><a href="">Storm Center</a></li>
+                <li><a class="active" href="">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <body>
+            <container class="gallery-grid">
+                <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy1.jpg" alt="Image Example 1">
+
+                <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy2.jpg" alt="Image Example 2">
+
+                <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy3.jpg" alt="Image Example 3">
+
+                <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy4.jpg" alt="Image Example 4">
+
+                <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy5.jpg" alt="Image Example 5">
+
+                <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy5.jpg" alt="Image Example 5">
+
+                <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy5.jpg" alt="Image Example 5">
+            </container>
+            <script src="script.js"></script>
+        </body>
+
+        <footer>
+
+            &#169; | Michaela Nell | Texas, USA | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
+                Learning home</a> | <span id="currentdate"></span>
+
+        </footer>
+        <script src="../lesson6/js/preston.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Rancho', 'Sans Serif', 'Raleway', 'Sans Serif']
+                }
+            });
+        </script>
+</body>
+
+</html>
