@@ -186,3 +186,15 @@ footer {
     text-align: center;
     border-radius: 10px;
 }
+
+/* Gallery Grid */
+
+.gallery-grid {
+    display: grid;
+    grid-auto-rows: 400px;
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    padding-bottom: 20px;
+}
