@@ -44,3 +44,7 @@ function toggleMenu() {
             document.getElementsByClassName("pancakes-banner")[0].classList.toggle("hide-banner");
         }
     }
+
+    function adjustRating(rating) {
+        document.getElementById("ratingvalue").innerHTML = rating;
+    }
