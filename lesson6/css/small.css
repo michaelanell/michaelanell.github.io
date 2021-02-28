@@ -216,7 +216,8 @@ form legend {
 form,
 label.top {
     display: block;
-    padding-top: 1rem;
+    padding-top: 20px;
+
     font-size: .8rem;
 }
 
@@ -225,7 +226,21 @@ form label.sbs {
 }
 
 input {
+
     background-color: #ccc;
     border: .5px, #333;
+    width: 40%;
+    padding: .25rem;
+}
+
+.radio {
+    border: .5px, #333;
+    width: 20px;
+    padding: .25rem;
+}
+
+.submit {
+    border-radius: 10px;
     width: 25%;
+    background-color: #527CB3;
 }
