@@ -1,5 +1,10 @@
 body {
-    font-family: 'Ubuntu, sans-serif';
+    font-family: 'Ubuntu', sans-serif;
+}
+
+th,
+td {
+    padding: 15px;
 }
 
 caption {
