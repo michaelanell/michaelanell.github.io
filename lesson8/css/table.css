@@ -4,7 +4,7 @@ body {
 }
 
 table {
-    box-shadow: 10px 10px 5px #ccc;
+    box-shadow: 7.5px 7.5px 10px #628ca6;
 }
 
 table,
@@ -20,15 +20,15 @@ td {
 }
 
 caption {
+    padding: 20px;
     background-color: #7fb9c2;
+    font-size: 1.75em;
 }
 
 th {
     background-color: #628ca6;
     color: #fff;
 }
-
-
 
 tr:nth-child(even) {
     background: #e7ffed;
