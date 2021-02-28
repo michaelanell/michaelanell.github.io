@@ -198,3 +198,34 @@ footer {
     margin: auto;
     padding-bottom: 20px;
 }
+
+/* Stormcenter */
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #527CB3;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+form legend {
+    font-size: 1.5rem;
+    font-family: 'Rancho', sans-serif;
+    padding: .5rem;
+}
+
+form,
+label.top {
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+}
+
+form label.sbs {
+    display: inline;
+}
+
+input {
+    background-color: #ccc;
+    border: .5px, #333;
+    width: 25%;
+}

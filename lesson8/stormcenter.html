@@ -43,72 +43,79 @@
         <body>
 
             <form method="get" action="thanks.html">
-                <label for="f1">Full Name:</label> <br>
-                <input type="text" id="f1" name="name" required pattern="[A-Za-z]+"> <br>
+                <fieldset>
+                    <legend>Your Information:</legend>
+                    <label class="top" for="f1">Full Name:</label> <br>
+                    <input type="text" id="f1" name="name" required pattern="[A-Za-z]+"> <br>
 
-                <label for="f2">Email:</label> <br>
-                <input type="email" id="f2" name="email" placeholder="demo@email.com"> <br>
+                    <label class="top" for="f2">Email:</label> <br>
+                    <input type="email" id="f2" name="email" placeholder="demo@email.com"> <br>
 
-                <label for="f3">Phone Number:</label> <br>
-                <input type="tel" id="f3" name="phone" required> <br>
+                    <label class="top" for="f3">Phone Number:</label> <br>
+                    <input type="tel" id="f3" name="phone" required> <br>
 
-                <label for="f4">Zip Code:</label> <br>
-                <input type="number" id="f4" name="zipcode" required> <br>
+                    <label class="top" for="f4">Zip Code:</label> <br>
+                    <input type="number" id="f4" name="zipcode" required> <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Weather Information:</legend>
+                    <label class="top" for="f5">Storm Date:</label> <br>
+                    <input type="date" id="f5" name="storm date"> <br>
 
-                <label for="f5">Storm Date:</label> <br>
-                <input type="date" id="f5" name="storm date"> <br>
+                    <label class="top" for="f6">Storm Type:</label> <br>
+                    <input list="f6-list" id="f6" name="storm type">
+                    <datalist id="f6-list">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist> <br>
 
-                <label for="f6">Storm Type:</label> <br>
-                <input list="f6-list" id="f6" name="storm type">
-                <datalist id="f6-list">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
-                </datalist> <br>
+                    <label class="sbs" for="f7">Storm Severity: <br>
+                        <input type="range" id="f7" name="storm severity" value="5" min="1" max="10" step="1"
+                            list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span> </label><br>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
 
-                <label for="f7">Storm Severity: <br>
-                    <input type="range" id="f7" name="storm severity" value="5" min="1" max="10" step="1"
-                        list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> <span
-                        id="ratingvalue">5</span> </label><br>
-                <datalist id="tickmarks">
-                    <option value="0">
-                    <option value="1">
-                    <option value="2">
-                    <option value="3">
-                    <option value="4">
-                    <option value="5">
-                    <option value="6">
-                    <option value="7">
-                    <option value="8">
-                    <option value="9">
-                    <option value="10">
-                </datalist>
+                    <label class="top" for="f8">Storm Region:</label> <br>
+                    <select name="storm region" id="f8">
+                        <option value="">Select Region ...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select> <br>
 
-                <label for="f8">Storm Region:</label> <br>
-                <select name="storm region" id="f8">
-                    <option value="">Select Region ...</option>
-                    <option value="Preston">Preston</option>
-                    <option value="Soda Springs">Soda Springs</option>
-                    <option value="Fish Haven">Fish Haven</option>
-                </select> <br>
+                    <label class="top" for="f9">User In-Danger Level:</label> <br>
+                    <input type="radio" id="f9-1" name="danger" value="yes">
+                    <label class="sbs" for="contactChoice1">Yes</label> <br>
 
-                <label for="f9">User In-Danger Level:</label> <br>
-                <input type="radio" id="f9-1" name="danger" value="yes">
-                <label for="contactChoice1">Yes</label> <br>
+                    <input type="radio" id="contactChoice2" name="danger" value="No">
+                    <label class="sbs" for="f9-2">No</label> <br>
 
-                <input type="radio" id="contactChoice2" name="danger" value="No">
-                <label for="f9-2">No</label> <br>
+                    <input type="radio" id="contactChoice3" name="danger" value="maybe">
+                    <label class="sbs" for="f9-3">Maybe</label> <br>
+                </fieldset>
 
-                <input type="radio" id="contactChoice3" name="danger" value="maybe">
-                <label for="f9-3">Maybe</label> <br>
+                <fieldset>
+                    <legend>Additional Concerns</legend>
+                    <label class="top" for="f10">Additional Information or Comments:</label> <br>
+                    <textarea id="f10" name="comment" rows="5" cols="33">Comment Here...</textarea><br>
 
-                <label for="f10">Additional Information or Comments:</label> <br>
-                <textarea id="f10" name="comment" rows="5" cols="33">Comment Here...</textarea><br>
-
-                <input type="submit" value="Submit" name="submitB">
-
+                    <input type="submit" value="Submit" name="submitButton">
+                </fieldset>
 
             </form>
 
