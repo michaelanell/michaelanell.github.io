@@ -1,30 +1,32 @@
 body {
-    max-width: 960px;
+    max-width: 1000px;
     margin: auto;
 }
 
-main {
-    background-color: #333;
-}
-
 section {
-
-    justify-content: center;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 
 h2 {
-    color: navy;
+    color: #fff;
     font-size: 1.5em;
+
 }
 
 .cards {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
+    justify-items: center;
+    background-color: #333;
+    grid-gap: 20px;
+    padding: 20px;
 }
 
 section img {
-    width: 75%;
+    width: 100%;
     box-shadow: ;
 }
 
