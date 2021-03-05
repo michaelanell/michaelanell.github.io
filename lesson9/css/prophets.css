@@ -9,6 +9,10 @@ section {
     text-align: center;
 }
 
+h1 {
+    color: #333;
+}
+
 h2 {
     color: #fff;
     font-size: 1.5em;
@@ -27,7 +31,7 @@ h2 {
 
 section img {
     width: 100%;
-    box-shadow: ;
+    box-shadow: 2px 2px 4px 4px #686868;
 }
 
 /* Medium Media Query*/
