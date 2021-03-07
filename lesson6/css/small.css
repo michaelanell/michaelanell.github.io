@@ -259,12 +259,33 @@ input {
 
 /* Medium Media Query*/
 @media only screen and (min-width: 768px) and (max-width:1023px) {
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
+
+    .cards section {
+        width: 700px;
+        margin: .5rem auto;
+        border: 1px solid #bbb;
+        background-color: #eee;
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    .cards section {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .cards section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .cards div {
+        margin: auto;
+    }
+
+
 }
+
 
 @media only screen and (min-width: 1024px) {
     .cards {
