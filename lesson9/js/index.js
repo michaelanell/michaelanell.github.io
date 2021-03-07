@@ -16,21 +16,26 @@ let card = document.createElement('section');
 let div = document.createElement('div');
 let h2 = document.createElement('h2');
 let h3 = document.createElement('h3');
-let p = document.createElement('p');
+let year = document.createElement('p');
+let population = document.createElement('p');
+let averageRain = document.createElement('p');
 let img = document.createElement('img');
 
 
 // template literals
 h2.textContent = `${town.name}`;
 h3.textContent = `${town.motto}`;
-p.textContent = `${town.yearFounded} ${town.currentPopulation} ${town.averageRainfall}`;
+year.textContent = "Year Founded:" + " " + `${town.yearFounded} ${town.currentPopulation} ${town.averageRainfall}`;
+population.textContent = "Population:" + " " + `${town.currentPopulation} ${town.averageRainfall}`;
+averageRain.textContent = "Average Rainfall:" + " " + `${town.averageRainfall}`;
 img.setAttribute('src', `${town.photo}`);
 
 card.appendChild(div);
 div.appendChild(h2);
 div.appendChild(h3);
-div.appendChild(p);
-div.appendChild(h3);
+div.appendChild(year);
+div.appendChild(population);
+div.appendChild(averageRain);
 card.appendChild(img);
 cards.appendChild(card);
 };
