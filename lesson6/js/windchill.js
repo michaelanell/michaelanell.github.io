@@ -11,7 +11,7 @@
  } 
  */
 
-document.getElementById("calculateWindChill").innerHTML = calculateWindChill(document.getElementById("wind-Speed").innerHTML, document.getElementById("temperature").innerHTML);
+document.getElementById("calculateWindChill").innerHTML = calculateWindChill(document.getElementById("wind-Speed").innerHTML, document.getElementById("current-temp").innerHTML);
 
  function calculateWindChill(temp, speed){
     let r;
