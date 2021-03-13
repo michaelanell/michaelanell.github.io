@@ -75,6 +75,7 @@
     }
 
     .temperatures {
+        display: inline;
         margin-left: auto;
         margin-right: auto;
     }

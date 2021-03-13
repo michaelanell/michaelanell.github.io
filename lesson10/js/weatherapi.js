@@ -27,4 +27,3 @@ windSpeed.textContent = jsObject.wind.speed;
 
 }
 );
-
