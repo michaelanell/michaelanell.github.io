@@ -12,7 +12,6 @@
  */
 
 document.getElementById("calculateWindChill").innerHTML = calculateWindChill(document.getElementById("wind-Speed").innerHTML, document.getElementById("current-temp").innerHTML);
-
  function calculateWindChill(temp, speed){
     let r;
     if ( temp <=50 && speed >3) {
@@ -22,9 +21,7 @@ document.getElementById("calculateWindChill").innerHTML = calculateWindChill(doc
     else {
         r = "N/A";  
     }
-    return r.toFixed(2);
-
+ }
     /* The toFixed() method converts a number into a string, rounding to a specified number of decimals. */
-}
 
  
