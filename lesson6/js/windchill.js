@@ -21,6 +21,7 @@ document.getElementById("calculateWindChill").innerHTML = calculateWindChill(doc
     else {
         r = "N/A";  
     }
+    return r.toFixed(2);
  }
     /* The toFixed() method converts a number into a string, rounding to a specified number of decimals. */
 
