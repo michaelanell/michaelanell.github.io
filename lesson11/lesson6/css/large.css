@@ -1,0 +1,65 @@
+@media only screen and (min-width: 50em) {
+    .site-inner {
+        max-width: 1000px;
+        margin: 20px auto;
+
+    }
+
+    .hero-div {
+        margin: auto;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .hero-img {
+        margin: auto;
+        background-color: #eee;
+        border: 1px solid #333;
+        width: 100%;
+    }
+
+    .weather-summery {
+        position: absolute;
+        top: 25%;
+        left: 100px;
+        background-color: #fff;
+        padding: 10px;
+    }
+
+    .forecast-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .forecast-img {
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .article-img {
+        width: 500px;
+    }
+
+    /* Gallery Grid */
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        align-items: center;
+        justify-items: center;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    .gallery-image:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    .gallery-grid p {
+        padding-left: 10px;
+    }
+
+}
