@@ -1,5 +1,4 @@
-alert('found me!');
- 
+
  /*function calculateWindChill(){ 
 
     if (temp <= 50 && windSpeed >= 3) {
