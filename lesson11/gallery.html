@@ -25,12 +25,12 @@
                 <p class="motto">How's the weather up there?</p>
             </div>
         </header>
-        <div class="pancakes-banner" class="hide-banner">
+        <div class="pancakes-banner">
             <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
         </div>
         <nav>
-            <ul class="navigation" class="responsive">
-                <li><button onclick="toggleMenu()">&#9776</button></li>
+            <ul class="navigation">
+                <li><button onclick="toggleMenu()">&#9776;</button></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
                 <li><a href="sodasprings.html">Soda Springs</a></li>
@@ -39,88 +39,85 @@
                 <li><a class="active" href="">Gallery</a></li>
             </ul>
         </nav>
-
-        <body>
-            <container class="gallery-grid">
-                <picture class="gallery-image"> <img src="images/graybox.jpg" data-src="images/lazy6.jpg"
-                        alt="Image Example 1">
-                    <p>Winter Snow</p>
-                </picture>
+        <div class="gallery-grid">
+            <div class="gallery-image"> <img src="images/graybox.jpg" data-src="images/lazy6.jpg" alt="Image Example 1">
+                <p>Winter Snow</p>
+            </div>
 
 
-                <picture class="gallery-image"> <img class="gallery-image" src="images/graybox.jpg"
-                        data-src="images/lazy2.jpg" alt="Image Example 2">
-                    <p>Winter Mountains</p>
-                </picture>
+            <div class="gallery-image"> <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy2.jpg"
+                    alt="Image Example 2">
+                <p>Winter Mountains</p>
+            </div>
 
 
 
-                <picture class="gallery-image">
-                    <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy3.jpg"
-                        alt="Image Example 3">
-                    <p>Fresh Winter Air</p>
-                </picture>
+            <div class="gallery-image">
+                <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy3.jpg" alt="Image Example 3">
+                <p>Fresh Winter Air</p>
+            </div>
 
 
-                <picture class="gallery-image"> <img class="gallery-image" src="images/graybox.jpg"
-                        data-src="images/lazy8.jpg" alt="Image Example 4">
-                    <p>Warm Afternoon</p>
-                </picture>
-
-
-
-                <picture class="gallery-image"> <img class="gallery-image" src="images/graybox.jpg"
-                        data-src="images/lazy5.jpg" alt="Image Example 5">
-                    <p>River in Summer</p>
-                </picture>
+            <div class="gallery-image"> <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy8.jpg"
+                    alt="Image Example 4">
+                <p>Warm Afternoon</p>
+            </div>
 
 
 
-                <picture class="gallery-image"> <img class="gallery-image" src="images/graybox.jpg"
-                        data-src="images/lazy7.jpg" alt="Image Example 5">
-                    <p>Snowy Cabin</p>
-                </picture>
+            <div class="gallery-image"> <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy5.jpg"
+                    alt="Image Example 5">
+                <p>River in Summer</p>
+            </div>
 
 
 
-                <picture class="gallery-image"> <img class="gallery-image" src="images/graybox.jpg"
-                        data-src="images/lazy1.jpg" alt="Image Example 5">
-                    <p>Cold Winter Night</p>
-                </picture>
+            <div class="gallery-image"> <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy7.jpg"
+                    alt="Image Example 5">
+                <p>Snowy Cabin</p>
+            </div>
 
 
 
-                <picture class="gallery-image">
-                    <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy10.jpg"
-                        alt="Image Example 5">
-                    <p>Overcast Morning</p>
-                </picture>
+            <div class="gallery-image"> <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy1.jpg"
+                    alt="Image Example 5">
+                <p>Cold Winter Night</p>
+            </div>
 
 
-                <picture class="gallery-image"> <img class="gallery-image" src="images/graybox.jpg"
-                        data-src="images/lazy9.jpg" alt="Image Example 5">
-                    <p>Afternoon Rainbow</p>
-                </picture>
 
-            </container>
-            <script src="js/script.js"></script>
-        </body>
+            <div class="gallery-image">
+                <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy10.jpg" alt="Image Example 5">
+                <p>Overcast Morning</p>
+            </div>
+
+
+            <div class="gallery-image"> <img class="gallery-image" src="images/graybox.jpg" data-src="images/lazy9.jpg"
+                    alt="Image Example 5">
+                <p>Afternoon Rainbow</p>
+            </div>
+
+        </div>
+        <script src="js/script.js"></script>
 
         <footer>
 
             &#169; | Michaela Nell | Texas, USA | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
                 Learning home</a> | <span id="currentdate"></span>
 
+            <script src="js/preston.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({
+                    google: {
+                        families: ['Rancho', 'Sans Serif', 'Raleway', 'Sans Serif']
+                    }
+                });
+            </script>
         </footer>
-        <script src="js/preston.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script>
-            WebFont.load({
-                google: {
-                    families: ['Rancho', 'Sans Serif', 'Raleway', 'Sans Serif']
-                }
-            });
-        </script>
+    </div>
+
+
 </body>
 
 </html>
