@@ -266,6 +266,18 @@ input {
     background-color: #527CB3;
 }
 
+/* Events styling */
+.events {
+    background-color: #49AEB3;
+    width: 75%;
+    padding: 20px;
+    margin: auto;
+    color: #fff;
+    border: 5px double #355073;
+}
+
+
+
 /* Home Page CSS */
 .cards {
     display: grid;
@@ -277,6 +289,8 @@ input {
     grid-gap: 20px;
     padding: 20px;
 }
+
+
 
 /* Medium Media Query*/
 @media only screen and (min-width: 768px) and (max-width:1023px) {
