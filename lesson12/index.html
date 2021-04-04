@@ -15,41 +15,141 @@
 
 <body class="site-inner">
     <header>
-        <h1></h1>
+        <h1>Herriman City Chamber of Commerce</h1>
     </header>
     <nav>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="city.html">City</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <img class="hero-img" src="images/" alt="Hero Image" sizes="50vw"
-            srcset="images/ 400w, images/ 800w, images/ 1200w">
+        <ul class="navigation">
+            <li><button onclick="toggleMenu()">&#9776;</button></li>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="city.html">CITY</a></li>
+            <li><a href="directory.html">DIRECTORY</a></li>
+            <li><a href="join.html">JOIN</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
     </nav>
+    <img class="hero-img" src="images/cityhall.jpg" alt="Hero Image" sizes="50vw"
+        srcset="images/cityhall400.jpg 400w, images/cityhall800.jpg 800w, images/cityhall1200.jpg 1200w">
+    <div class="conditions-summery">
+        <h3>Weather Summary</h3>
+        <p>Temperature: <span id="current-temp"></span> &#176;</p>
+        <p>Wind Speed: <span id="current-condition"></span> mph<br></p>
+        <p>Humidity:<span id="humidity"></span>
+            <script src="js/windChill.js"></script> °F
+        </p>
+    </div>
     <main>
+        <div>
+            <h2>Upcoming Events!</h2>
+            <h3>April Easter Bash</h3>
+            <img id="easter" src="images/easter.jpg" alt="Business Two">
+            <p>Please join us for our annual city easter bash on Saturday, April 3 at 3:00PM at </p>
+        </div>
         <h2>Enjoy Local Businesses</h2>
-        <container>
-            <div>
-                <h3></h3>
-                <img src="" alt="Business One">
-                <p></p>
+        <container class="grid-1">
+            <div id="item-1">
+                <h3>Rewipped</h3>
+                <img src="images/business1.png" alt="Business Two">
             </div>
-            <div>
+            <div id="item-2">
+                <p>Soda Springs is a city in Caribou County, Idaho, United States. Its population was
+                    3,058 at the 2010 census. The city has been the county seat of Caribou County since the
+                    county was
+                    organized in 1919. In the 1860s, Soda Springs served as the seat of Oneida County. The city
+                    is named
+                    for
+                    the hundreds of natural springs of carbonated water that are located in and around the
+                    city.[6] The
+                    springs were well known to Native Americans and were a famous landmark along the Oregon
+                    Trail in the
+                    middle 19th century. Today the city is also known as the location of the Soda Springs
+                    Geyser, which
+                    was
+                    unleashed in 1934 when "town fathers" were looking for hot water for a "hot pool" bathing
+                    attraction.</p>
+            </div>
+            <div id="item-3">
                 <h3>Vasa Fitness</h3>
-                <img src="" alt="Business Two">
-                <p></p>
+                <img src="images/vasa.jpeg" alt="Business Two">
             </div>
-            <div>
-                <h3></h3>
+            <div id="item-4">
+                <p>Soda Springs is a city in Caribou County, Idaho, United States. Its population was
+                    3,058 at the 2010 census. The city has been the county seat of Caribou County since the
+                    county was
+                    organized in 1919. In the 1860s, Soda Springs served as the seat of Oneida County. The city
+                    is named
+                    for
+                    the hundreds of natural springs of carbonated water that are located in and around the
+                    city.[6] The
+                    springs were well known to Native Americans and were a famous landmark along the Oregon
+                    Trail in the
+                    middle 19th century. Today the city is also known as the location of the Soda Springs
+                    Geyser, which
+                    was
+                    unleashed in 1934 when "town fathers" were looking for hot water for a "hot pool" bathing
+                    attraction.</p>
+            </div>
+            <div id="item-5">
+                <h3>Business Three</h3>
                 <img src="" alt="Business Three">
-                <p></p>
+            </div>
+            <div id="item-6">
+                <p>Soda Springs is a city in Caribou County, Idaho, United States. Its population was
+                    3,058 at the 2010 census. The city has been the county seat of Caribou County since the
+                    county was
+                    organized in 1919. In the 1860s, Soda Springs served as the seat of Oneida County. The city
+                    is named
+                    for
+                    the hundreds of natural springs of carbonated water that are located in and around the
+                    city.[6] The
+                    springs were well known to Native Americans and were a famous landmark along the Oregon
+                    Trail in the
+                    middle 19th century. Today the city is also known as the location of the Soda Springs
+                    Geyser, which
+                    was
+                    unleashed in 1934 when "town fathers" were looking for hot water for a "hot pool" bathing
+                    attraction.</p>
             </div>
         </container>
 
         <h2>Our Purpose</h2>
-        <p></p>
+        <p>Soda Springs is a city in Caribou County, Idaho, United States. Its population was
+            3,058 at the 2010 census. The city has been the county seat of Caribou County since the county was
+            organized in 1919. In the 1860s, Soda Springs served as the seat of Oneida County. The city is named
+            for
+            the hundreds of natural springs of carbonated water that are located in and around the city.[6] The
+            springs were well known to Native Americans and were a famous landmark along the Oregon Trail in the
+            middle 19th century. Today the city is also known as the location of the Soda Springs Geyser, which
+            was
+            unleashed in 1934 when "town fathers" were looking for hot water for a "hot pool" bathing
+            attraction.</p>
+
+        <h3>Join Us Now!</h3>
+        <footer>
+            <!-- Contact Info-->
+            <div class="grid-2">
+                <div id="item-2.1">
+                    <h2>Contact Us</h2>
+                    <p>Phone: (801) 446-5323</p>
+                    <p>Email: info@herriman.org</p>
+                    <p>City Hall Address: 5355 West Herriman Main Street
+                        Herriman, UT 84096</p>
+                </div>
+                <!-- Social Media Links-->
+                <div id="item-2.1">
+
+                </div>
+            </div>
     </main>
-    <footer></footer>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Playfair Display', 'Serif', 'Alegreya Sans', 'Sans Serif']
+            }
+        });
+    </script>
 
 </body>
 

@@ -3,7 +3,7 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5678757&APPID
 fetch(apiURL)
 .then((response) => response.json())
 .then((jsObject) => {
-console.log(jsObject);
+//console.log(jsObject);
 
 //Create variables and set them to values in object
 const currentTemp = document.querySelector('#current-temp');

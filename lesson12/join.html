@@ -15,18 +15,68 @@
 
 <body class="site-inner">
     <header>
-        <h1>Join Us</h1>
+        <h1>Herriman City Chamber of Commerce</h1>
     </header>
     <nav>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="city.html">City</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a class="active" href="contact.html">Contact</a></li>
-        <img class="hero-img" src="images/" alt="Hero Image" sizes="50vw"
-            srcset="images/ 400w, images/ 800w, images/ 1200w">
+        <ul class="navigation">
+            <li><button onclick="toggleMenu()">&#9776;</button></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="city.html">CITY</a></li>
+            <li><a href="directory.html">DIRECTORY</a></li>
+            <li><a href="join.html">JOIN</a></li>
+            <li><a class="active" href="contact.html">CONTACT</a></li>
+        </ul>
     </nav>
-    <main></main>
+    <img class="hero-img" src="images/cityhall.jpg" alt="Hero Image" sizes="50vw"
+        srcset="images/cityhall400.jpg 400w, images/cityhall800.jpg 800w, images/cityhall1200.jpg 1200w">
+    <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Your Information:</legend>
+                <label class="top" for="f1">First Name:</label> <br>
+                <input type="text" id="f1" name="first-name" required pattern="[A-Za-z]"> <br>
+
+                <label class="top" for="f2">Last Name:</label> <br>
+                <input type="text" id="f2" name="last-name" required pattern="[A-Za-z]"> <br>
+
+                <label class="top" for="f3">Title:</label> <br>
+                <input type="text" id="f3" name="title"> <br>
+
+                <label class="top" for="f4">Email:</label> <br>
+                <input type="email" id="f4" name="email" placeholder="demo@email.com"> <br>
+
+                <label class="top" for="f5">Phone Number:</label> <br>
+                <input type="tel" id="f5" name="phone" required> <br>
+
+                <label class="top" for="f6">Business Name:</label> <br>
+                <input type="text" id="f6" name="business-name" required> <br>
+
+                <label class="top">Business Address:</label> <br>
+                <label class="top" for="f7">Street Address:</label> <br>
+                <input type="text" id="f7" name="street-address" required> <br>
+
+                <label class="top" for="f7">City:</label> <br>
+                <input type="text" id="f7" name="city" value="Herriman"> <br>
+
+                <label class="top" for="f7">Zip Code:</label> <br>
+                <input type="number" id="f7" name="zipcode" value="84096"> <br>
+
+                <label class="top" for="f10">Business Desciption:</label> <br>
+                <textarea id="f10" name="comment" rows="5" cols="50">Enter Here...</textarea><br>
+
+                <label class="top" for="f8">Storm Region:</label> <br>
+                <select name="storm region" id="f8">
+                    <option value="">Select Membership...</option>
+                    <option value="Non-profit ($100)">Non-profit ($100)</option>
+                    <option value="Bronze ($200)">Bronze ($200)</option>
+                    <option value="Silver ($400)">Silver ($400)</option>
+                    <option value="Gold ($1000)">Gold ($1000)</option>
+                </select> <br>
+                <input class="submit" type="submit" value="Submit" name="submitButton">
+            </fieldset>
+        </form>
+
+    </main>
     <footer></footer>
 
 </body>

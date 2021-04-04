@@ -1,0 +1,39 @@
+@media only screen and (min-width: 32.5em) {
+    .site-inner {
+        max-width: 800px;
+        margin: 20px auto;
+
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        color: #fff;
+    }
+
+    .grid-1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: center;
+        grid-gap: 20px;
+    }
+
+    .conditions-summery {
+        position: absolute;
+        top: 30%;
+        right: 100px;
+        background-color: #fff;
+        padding: 10px;
+    }
+}
