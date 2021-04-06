@@ -1,0 +1,67 @@
+{
+    "business": [
+        {
+            "businessname": "The Salty Pineapple",
+            "address": "13262 S 5600 W, Herriman, UT 84096",
+            "website": "https://the-saltypineapple.com/",
+            "phonenumber": "(801) 890-0532",
+            "emailaddress": "aloha@the-saltypineapple.com",
+            "hours": "11AM–8PM",
+            "imageurl": "saltypineapple.png"
+          },
+          {
+            "businessname": "Rewhipped",
+            "address": "13292 S 5600 W, Herriman, UT 84096",
+            "website": "https://rewhipped.com/",
+            "phonenumber": "(801) 666-6844",
+            "emailaddress": "info@rewhipped.com",
+            "hours": "10AM–8PM",
+            "imageurl": "rewhippedlogo.png"
+          },
+          {
+            "businessname": "Fizz",
+            "address": "13308 S 5600 W, Herriman, UT 84096",
+            "website": "https://www.fiizdrinks.com/",
+            "phonenumber": "801-432-7188",
+            "emailaddress": "Not Avaliable",
+            "hours": "7:30AM-10:00PM",
+            "imageurl": "images/fizzlogo.jpeg"
+          },
+          {
+            "businessname": "JCW’s",
+            "address": "5251 Anthem Park Blvd, Herriman, UT 84096",
+            "website": "https://jcwsherriman.mobilebytes.com/menu",
+            "phonenumber": "(801) 253-8028",
+            "emailaddress": "Not Avaliable",
+            "hours": "10AM–10PM",
+            "imageurl": "images/jcwlogo.png"
+          },
+          {
+            "businessname": "Ôh Maí Herriman",
+            "address": "5516 13400 S a10, Herriman, UT 84096",
+            "website": "ohmaiherriman.com",
+            "phonenumber": "(801) 930-9868",
+            "emailaddress": "tamthai83@gmail.com",
+            "hours":"11AM to 8PM",
+            "imageurl": "images/ohmailogo.png"
+          },
+          {
+            "businessname": "Lagarnachautah",
+            "address": "5418 Main St, Herriman, UT 84096",
+            "website": "lagarnachautah.com",
+            "phonenumber": "(385) 695-5871",
+            "emailaddress": "info@lagarnachautah.com",
+            "hours": "11AM–9PM",
+            "imageurl": ""
+          },
+          {
+            "businessname": "Cafe Rio Mexican Grill",
+            "address": "5506 13400 S, Herriman, UT 84096",
+            "website": "https://www.caferio.com",
+            "phonenumber": "(801) 988-4800",
+            "emailaddress": "Not Avaliable",
+            "hours": "10:30AM-10:00PM",
+            "imageurl": "images/caferiologo.png"
+          }
+    ]
+}
