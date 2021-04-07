@@ -20,9 +20,11 @@ const humidity = document.querySelector('#humidity');
 humidity.textContent = jsObject.current.humidity;
 });
 
-const
-fetch("")
+const cards = "https://michaelanell.github.io/lesson12/businesses.json";
+fetch("/businesses.json")
 .then((response) => response.json())
 .then((jsObject) => {
 console.log(jsObject);
 });
+
+
