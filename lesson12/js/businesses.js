@@ -10,7 +10,7 @@ fetch(busURL)
 //console.table(jsonObject);
 const info = jsonObject['business'];
 // selecting output location
-const cards = document.querySelector('#business-cards')
+const cards = document.querySelector('.business-cards')
 
 info.forEach(info => {
 // creates element - does not put it on the page, just creates it in memory
@@ -36,11 +36,12 @@ img.setAttribute('src', `${info.imageurl}`);
 
 cards.appendChild(businessDiv);
 businessDiv.appendChild(businessName);
+businessDiv.appendChild(img);
 businessDiv.appendChild(address);
 businessDiv.appendChild(website);
 businessDiv.appendChild(phoneNumber);
 businessDiv.appendChild(hours);
-businessDiv.appendChild(img);
+
 });
 });
 

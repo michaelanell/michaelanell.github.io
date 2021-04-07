@@ -29,7 +29,40 @@
     </nav>
     <img class="hero-img" src="images/cityhall.jpg" alt="Hero Image" sizes="50vw"
         srcset="images/cityhall400.jpg 400w, images/cityhall800.jpg 800w, images/cityhall1200.jpg 1200w">
-    <main></main>
+    <main>
+        <div>
+            <h2>Contact Us</h2>
+            <p>Phone: (801) 446-5323</p>
+            <p>Email: info@herriman.org</p>
+            <p>City Hall Address: 5355 West Herriman Main Street
+                Herriman, UT 84096</p>
+        </div>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Contact Us:</legend>
+                <label class="top" for="f1">First Name:</label> <br>
+                <input type="text" id="f1" name="first-name" required pattern="[A-Za-z]"> <br>
+
+                <label class="top" for="f2">Last Name:</label> <br>
+                <input type="text" id="f2" name="last-name" required pattern="[A-Za-z]"> <br>
+
+                <label class="top" for="f4">Email:</label> <br>
+                <input type="email" id="f4" name="email" placeholder="demo@email.com"> <br>
+
+                <label class="top" for="f5">Phone Number:</label> <br>
+                <input type="tel" id="f5" name="phone" required> <br>
+
+                <label class="top" for="f10">Additional Comments:</label> <br>
+                <textarea id="f10" name="comment" rows="5" cols="50" placeholder="Enter Here..."></textarea><br>
+
+                <input class="submit" type="submit" value="Submit" name="submitButton">
+            </fieldset>
+        </form>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48544.35923005122!2d-112.06482141884592!3d40.49688656498181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752837ff975dc3d%3A0xb23dcb217417201e!2sHerriman%2C%20UT%2084096!5e0!3m2!1sen!2sus!4v1617781347923!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </main>
     <footer></footer>
 
 </body>

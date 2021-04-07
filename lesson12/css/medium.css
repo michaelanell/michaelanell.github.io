@@ -24,8 +24,10 @@
 
     .grid-1 {
         display: grid;
+        font-size: 1.2em;
         grid-template-columns: 1fr 2fr;
         justify-content: center;
+        justify-items: center;
         grid-gap: 20px;
     }
 
@@ -34,6 +36,28 @@
         top: 30%;
         right: 100px;
         background-color: #fff;
+        padding: 10px;
+    }
+
+    /* Style for the directory page */
+
+    .business-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+    .reponsive-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        grid-gap: 10px;
         padding: 10px;
     }
 }
