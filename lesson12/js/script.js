@@ -18,5 +18,11 @@ currentCondition.textContent = jsObject.current.weather[0].description;
 
 const humidity = document.querySelector('#humidity');
 humidity.textContent = jsObject.current.humidity;
+});
 
+const
+fetch("")
+.then((response) => response.json())
+.then((jsObject) => {
+console.log(jsObject);
 });
