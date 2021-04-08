@@ -231,3 +231,20 @@ footer {
 .city-img {
     justify-self: center;
 }
+
+footer {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+#lastModified,
+#currentdate {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #fff;
+
+}
+
+.byline {
+    text-align: center;
+}
