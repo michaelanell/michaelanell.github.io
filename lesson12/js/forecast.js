@@ -22,10 +22,10 @@ let day = jsObject.daily;
 console.log(day);
 
 for (i = 0; i < day.length; i++) {
-let date = new Date(i);
+let date = new Date([i]);
 
 document.getElementById("title" + (position + 1)).textContent =
-daynames[date.getDay()];
+daynames[date.getDay(i)];
 
 //console.log(day);
  document.getElementById("day" + (position + 1)).textContent = day[i].temp.day + " °F";
