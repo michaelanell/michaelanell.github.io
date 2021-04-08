@@ -29,7 +29,7 @@ let i = 0;
 
 // Create a for loop to run through the array by index # and collect specified values
 
-for (i = 0; i<days.length; i++) {
+for (i = 0; i <days.length; i++) {
     let date = new Date(days[i].dt_txt);
 
     // Retrive day

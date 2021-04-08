@@ -10,13 +10,18 @@
     <link href="css/medium.css" rel="stylesheet" type="text/css">
     <link href="css/large.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normailize.css">
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
 <body class="site-inner">
+
     <header>
-        <h1>Herriman City Chamber of Commerce</h1>
+        <div class="header-grid">
+            <img id="logo" src="images/town-hall-vector.jpg" alt="logo">
+            <h1 id="heading">Herriman City Chamber of Commerce</h1>
+        </div>
     </header>
+
     <nav>
         <ul class="navigation">
             <li><button onclick="toggleMenu()">&#9776;</button></li>
@@ -33,83 +38,132 @@
         <h3>Weather Summary</h3>
         <p>Temperature: <span id="current-temp"></span> &#176;</p>
         <p>Wind Speed: <span id="current-condition"></span> mph<br></p>
-        <p>Humidity:<span id="humidity"></span>
-        </p>
+        <p>Humidity:<span id="humidity"></span> </p>
     </div>
     <main>
-        <div>
-            <h2>Upcoming Events!</h2>
-            <h3>April Easter Bash</h3>
-            <img id="easter" src="images/easter.jpg" alt="Business Two">
-            <p>Please join us for our annual city easter bash on Saturday, April 3 at 3:00PM at </p>
+        <div class="forecast-div1">
+            <h3 class=forecast-title>Three Day Forecast</h3>
+            <div class="forecast-div2">
+                <div class="forecast-images">
+                    <h4 id=title1></h4>
+                    <h4 id=title2></h4>
+                    <h4 id=title3></h4>
+                    <div class="temperatures"><img id="imagesrc1" src="" alt="">
+                    </div>
+                    <div class="temperatures"><img id="imagesrc2" class="forecast-img" src="" alt="">
+                    </div>
+                    <div class="temperatures"> <img id="imagesrc3" class="forecast-img" src="" alt="">
+                    </div>
+                    <p class="temperatures"><span id="day1"></span> &#176;</p>
+                    <p class="temperatures"><span id="day2"></span> &#176;</p>
+                    <p class="temperatures"><span id="day3"></span> &#176;</p>
+                </div>
+            </div>
         </div>
-        <h2>Enjoy Local Businesses</h2>
-        <container class="grid-1">
-            <div id="item-1">
-                <h3>Rewipped</h3>
-                <img src="images/business1.png" alt="Business Two">
+        <div>
+            <div class="upcoming-events">
+                <h2>Upcoming Events!</h2>
+                <h3>April Easter Bash</h3>
+                <p>Please join us for our annual city easter bash on Saturday, April 3 at 3:00PM at the City Hall Park
+                    at
+                    5355 West Herriman Main Street Herriman, UT 84096. </p>
             </div>
-            <div id="item-2">
-                <p>"Rewhipped takes the flavors of classic treats and makes them into unique, gourmet cookies. Our
-                    cookies are made from scratch in Utah with the finest ingredients, like Callebaut® and Guittard®
-                    chocolate. Full of satisfying handmade goodness, our cookies are suitable for any occasion, from
-                    small family gatherings to large receptions. Visit our Utah cookie shop or buy cookies & pies online
-                    for in-store pickup." Derived from rewhipped.com.</p>
-            </div>
-            <div id="item-3">
-                <h3>Vasa Fitness</h3>
-                <img src="images/vasa.jpeg" alt="Business Two">
-            </div>
-            <div id="item-4">
-                <p>"You’ve got goals and we’ve got personalized plans to help you achieve them. From our Basic
-                    Membership that gets you in the door and experiencing all our awesome equipment, to our Studio
-                    Membership that delivers access to top-level training plus everything else we offer, we have a
-                    membership that’s a perfect fit for you.<br>
-                    We’re here to help you get fit and leave happy – a good workout can do that. Some call it runner’s
-                    high. Others call it endorphins. Maybe it’s simply that sense of accomplishment or being part of a
-                    group. We’re here for YOU. We’re your other home, a place where you can leave the world at the door
-                    and focus on yourself. Come find your happy place." Derived from vasafitness.com.</p>
-            </div>
-            <div id="item-5">
-                <h3>The Salty Pineapple</h3>
-                <img src="images/saltypineapplelogo.png" alt="Business Three">
-            </div>
-            <div id="item-6">
-                <p>"The Salty Pineapple serves traditional Hawaiian BBQ with a spin! Established in 2016 by owner Daysha
-                    Filipe at the age of 21, the Salty Pineapple takes the island flavors that Daysha grew up with and
-                    brings them to the Salt Lake valley.<br>
-                    Our menu features classic Hawaiian BBQ as well as vegetarian and vegan options. We take pride in
-                    serving quality crafted food and providing friendly service the island way. We believe in delivering
-                    daily aloha to the Salt Lake valley. Look for us at local locations, business parks, events, or hire
-                    our team to cater your next event!" Derived from the-saltypineapple.com.</p>
-            </div>
-        </container>
 
-        <h2>Our Purpose</h2>
-        <p>Our purpose is to create a sense of community amoung the inhabitants of Herriman, Utah. You've made this your
-            home. Now let us </p>
+            <img id="easter" src="images/easter.jpg" alt="Business Two">
 
-        <button>
-            <h3>Join Us Now!</h3>
-        </button>
-        <footer>
-            <!-- Contact Info-->
-            <div class="grid-2">
-                <div id="item-2.1">
-                    <h2>Contact Us</h2>
-                    <p>Phone: (801) 446-5323</p>
-                    <p>Email: info@herriman.org</p>
-                    <p>City Hall Address: 5355 West Herriman Main Street
-                        Herriman, UT 84096</p>
+        </div>
+
+        <div class="local-business">
+            <h2>Enjoy Local Businesses</h2>
+            <container class="grid-1">
+                <div id="item-1">
+                    <h3>Rewipped</h3>
+                    <img src="images/business1.png" alt="Business Two">
                 </div>
-                <!-- Social Media Links-->
-                <div id="item-2.1">
-
+                <div id="item-2">
+                    <p>"Rewhipped takes the flavors of classic treats and makes them into unique, gourmet cookies. Our
+                        cookies are made from scratch in Utah with the finest ingredients, like Callebaut® and Guittard®
+                        chocolate. Full of satisfying handmade goodness, our cookies are suitable for any occasion, from
+                        small family gatherings to large receptions. Visit our Utah cookie shop or buy cookies & pies
+                        online
+                        for in-store pickup." Derived from rewhipped.com.</p>
                 </div>
-            </div>
+                <div id="item-3">
+                    <h3>Vasa Fitness</h3>
+                    <img src="images/vasa.jpeg" alt="Business Two">
+                </div>
+                <div id="item-4">
+                    <p>"You’ve got goals and we’ve got personalized plans to help you achieve them. From our Basic
+                        Membership that gets you in the door and experiencing all our awesome equipment, to our Studio
+                        Membership that delivers access to top-level training plus everything else we offer, we have a
+                        membership that’s a perfect fit for you.<br>
+                        We’re here to help you get fit and leave happy – a good workout can do that. Some call it
+                        runner’s
+                        high. Others call it endorphins. Maybe it’s simply that sense of accomplishment or being part of
+                        a
+                        group. We’re here for YOU. We’re your other home, a place where you can leave the world at the
+                        door
+                        and focus on yourself. Come find your happy place." Derived from vasafitness.com.</p>
+                </div>
+                <div id="item-5">
+                    <h3>The Salty Pineapple</h3>
+                    <img src="images/saltypineapplelogo.png" alt="Business Three">
+                </div>
+                <div id="item-6">
+                    <p>"The Salty Pineapple serves traditional Hawaiian BBQ with a spin! Established in 2016 by owner
+                        Daysha
+                        Filipe at the age of 21, the Salty Pineapple takes the island flavors that Daysha grew up with
+                        and
+                        brings them to the Salt Lake valley.<br>
+                        Our menu features classic Hawaiian BBQ as well as vegetarian and vegan options. We take pride in
+                        serving quality crafted food and providing friendly service the island way. We believe in
+                        delivering
+                        daily aloha to the Salt Lake valley. Look for us at local locations, business parks, events, or
+                        hire
+                        our team to cater your next event!" Derived from the-saltypineapple.com.</p>
+                </div>
+
+            </container>
+        </div>
+
+        <div class="purpose-grid">
+            <h2>Our Purpose</h2>
+            <p>Our purpose is to create a sense of community amoung the inhabitants of Herriman, Utah. You've made this
+                your home, now let us do something for you. We are here to help you grow your businesses, connect with
+                your community, and reaffrim that your choice to choose Herriman was the best one for you and your
+                family. We provide up to date information on local businesses, sports teams, local events, and local
+                news.</p>
+
+            <button class="join-button">
+                <a href="join.html">
+                    <h3>Join Us Now!</h3>
+                </a>
+            </button>
+        </div>
     </main>
+    <footer>
+        <!-- Contact Info-->
+        <div class="grid-2">
+            <div id="item-2.1">
+                <h4 class="form-label">Contact Us</h4>
+                <p>Phone: (801) 446-5323</p>
+                <p>Email: info@herriman.org</p>
+                <p>City Hall Address: 5355 West Herriman Main Street
+                    Herriman, UT 84096</p>
+            </div>
+            <!-- Social Media Links-->
+            <div id="item-2-2">
+                <h4 class="form-label">Follow Us</h4>
+                <img src="images/facebooklogo.png" alt="facebook logo"><br>
+                <img src="images/instagramlogo.png" alt="instagram logo">
+                <p>Assets Page:</p> <a href="assets.html">Click Here</a>
+
+            </div>
+        </div>
     </footer>
+
     <script src="js/script.js"></script>
+    <script src="js/forecast.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({

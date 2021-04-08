@@ -4,38 +4,53 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Chamber of Commerce Directory Page for Michaela Nell repository for CIT 230">
-    <title>Directory</title>
+    <meta name="description" content="Chamber of Commerce Assets Page for Michaela Nell repository for CIT 230">
+    <title>Home</title>
     <link href="css/small.css" rel="stylesheet" type="text/css">
     <link href="css/medium.css" rel="stylesheet" type="text/css">
     <link href="css/large.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normailize.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="">
 </head>
 
 <body class="site-inner">
+
     <header>
         <div class="header-grid">
             <img id="logo" src="images/town-hall-vector.jpg" alt="logo">
             <h1 id="heading">Herriman City Chamber of Commerce</h1>
         </div>
     </header>
+
     <nav>
         <ul class="navigation">
             <li><button onclick="toggleMenu()">&#9776;</button></li>
-            <li><a href="index.html">HOME</a></li>
+            <li><a class="active" href="index.html">HOME</a></li>
             <li><a href="city.html">CITY</a></li>
-            <li><a class="active" href="directory.html">DIRECTORY</a></li>
+            <li><a href="directory.html">DIRECTORY</a></li>
             <li><a href="join.html">JOIN</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
     <img class="hero-img" src="images/cityhall.jpg" alt="Hero Image" sizes="50vw"
         srcset="images/cityhall400.jpg 400w, images/cityhall800.jpg 800w, images/cityhall1200.jpg 1200w">
+    <div class="conditions-summery">
+        <h3>Weather Summary</h3>
+        <p>Temperature: <span id="current-temp"></span> &#176;</p>
+        <p>Wind Speed: <span id="current-condition"></span> mph<br></p>
+        <p>Humidity:<span id="humidity"></span> </p>
+    </div>
     <main>
-        <button onclick="toggleView()"><img src="images/gridimg.jpeg" alt="grid view"></button>
-        <button onclick="toggleView()"><img src="images/lineimg.jpeg" alt="grid view"></button>
-        <div class="business-cards"></div>
+        <p>Logo Image: https://www.vecteezy.com/vector-art/217455-town-hall</p>
+        <p>Historical Information: https://en.wikipedia.org/wiki/Herriman,_Utah</p>
+        <p>Local business information:
+            https://www.google.com/search?q=food+near+herriman+ut&tbm=lcl&sxsrf=ALeKk00p4J5ES-rCWESxEedefjP1E43-4g%3A1617846669158&ei=jWFuYPuVCdO_tQaAoo-4BQ&oq=food+near+herr&gs_l=psy-ab.3.0.0i263i20k1l2j0j0i433i457i10k1j0j0i10k1l5.11449.13415.0.15248.6.5.1.0.0.0.110.445.4j1.5.0....0...1c.1.64.psy-ab..0.6.446...0i433i457k1j0i457i22i30k1j0i22i30k1.0.O6bT1DusxfU#rlfi=hd:;si:;mv:[[40.549312,-111.99795189999999],[40.5051169,-112.02726919999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u5!2m2!5m1!1sgcid_3american_1restaurant!1m4!1u5!2m2!5m1!1sgcid_3hamburger_1restaurant!1m4!1u2!2m2!2m1!1e1!1m4!1u1!2m2!1m1!1e1!1m4!1u1!2m2!1m1!1e2!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e5!2m1!1e1!2m1!1e3!3sIAEqAlVT,lf:1,lf_ui:9
+        </p>
+        <p>Board of directors: https://www.herriman.org/boards-commissions</p>
+        <p>Facebook Logo: https://www.pinterest.com/pin/441704675933339051/</p>
+        <p>Instagram Logo: https://pixabay.com/illustrations/instagram-insta-logo-new-images-1675670/</p>
+        <p>Up house image: https://www.utahrealtygroup.com/herriman/</p>
+        <p>The cove image: https://www.mcarthurhomes.com/2018/12/19/herrimanparks/</p>
     </main>
     <footer>
         <!-- Contact Info-->
@@ -58,9 +73,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/view.js"></script>
-    <script src="js/businesses.js"></script>
-
+    <script src="js/forecast.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({

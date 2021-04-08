@@ -10,12 +10,15 @@
     <link href="css/medium.css" rel="stylesheet" type="text/css">
     <link href="css/large.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normailize.css">
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
 <body class="site-inner">
     <header>
-        <h1>Herriman City Chamber of Commerce</h1>
+        <div class="header-grid">
+            <img id="logo" src="images/town-hall-vector.jpg" alt="logo">
+            <h1 id="heading">Herriman City Chamber of Commerce</h1>
+        </div>
     </header>
     <nav>
         <ul class="navigation">
@@ -32,40 +35,64 @@
     <main>
         <form method="get" action="thanks.html">
             <fieldset>
-                <legend>Your Information:</legend>
-                <label class="top" for="f1">First Name:</label> <br>
+                <legend>
+                    <h2>Your Information:</h2>
+                </legend>
+                <label class="top" for="f1">
+                    <h4 class="form-label">First Name:</h4>
+                </label> <br>
                 <input type="text" id="f1" name="first-name" required pattern="[A-Za-z]"> <br>
 
-                <label class="top" for="f2">Last Name:</label> <br>
+                <label class="top" for="f2">
+                    <h4 class="form-label">Last Name:</h4>
+                </label> <br>
                 <input type="text" id="f2" name="last-name" required pattern="[A-Za-z]"> <br>
 
-                <label class="top" for="f3">Title:</label> <br>
+                <label class="top" for="f3">
+                    <h4 class="form-label">Title:</h4>
+                </label> <br>
                 <input type="text" id="f3" name="title"> <br>
 
-                <label class="top" for="f4">Email:</label> <br>
+                <label class="top" for="f4">
+                    <h4 class="form-label">Email:</h4>
+                </label> <br>
                 <input type="email" id="f4" name="email" placeholder="demo@email.com"> <br>
 
-                <label class="top" for="f5">Phone Number:</label> <br>
+                <label class="top" for="f5">
+                    <h4 class="form-label">Phone Number:</h4>
+                </label> <br>
                 <input type="tel" id="f5" name="phone" required> <br>
 
-                <label class="top" for="f6">Business Name:</label> <br>
+                <label class="top" for="f6">
+                    <h4 class="form-label">Business Name:</h4>
+                </label> <br>
                 <input type="text" id="f6" name="business-name" required> <br>
 
-                <label class="top">Business Address:</label> <br>
+                <label class="top">
+                    <h4 class="form-label">Business Address:</h4>
+                </label> <br>
                 <label class="top" for="f7">Street Address:</label> <br>
                 <input type="text" id="f7" name="street-address" required> <br>
 
-                <label class="top" for="f7">City:</label> <br>
+                <label class="top" for="f7">
+                    <h4 class="form-label">City:</h4>
+                </label> <br>
                 <input type="text" id="f7" name="city" value="Herriman"> <br>
 
-                <label class="top" for="f7">Zip Code:</label> <br>
+                <label class="top" for="f7">
+                    <h4 class="form-label">Zip Code:</h4>
+                </label> <br>
                 <input type="number" id="f7" name="zipcode" value="84096"> <br>
 
-                <label class="top" for="f10">Business Desciption:</label> <br>
+                <label class="top" for="f10">
+                    <h4 class="form-label">Business Desciption:</h4>
+                </label> <br>
                 <textarea id="f10" name="comment" rows="5" cols="50" placeholder="Enter Here..."></textarea><br>
 
-                <label class="top" for="f8">Membership Level:</label> <br>
-                <select name="storm region" id="f8">
+                <label class="top" for="f8">
+                    <h4 class="form-label">Membership Level:</h4>
+                </label> <br>
+                <select name="membership level" id="f8">
                     <option value="">Select Membership...</option>
                     <option value="Non-profit ($100)">Non-profit ($100)</option>
                     <option value="Bronze ($200)">Bronze ($200)</option>
@@ -77,8 +104,35 @@
         </form>
 
     </main>
-    <footer></footer>
+    <footer>
+        <!-- Contact Info-->
+        <div class="grid-2">
+            <div id="item-2.1">
+                <h4 class="form-label">Contact Us</h4>
+                <p>Phone: (801) 446-5323</p>
+                <p>Email: info@herriman.org</p>
+                <p>City Hall Address: 5355 West Herriman Main Street
+                    Herriman, UT 84096</p>
+            </div>
+            <!-- Social Media Links-->
+            <div id="item-2-2">
+                <h4 class="form-label">Follow Us</h4>
+                <img src="images/facebooklogo.png" alt="facebook logo"><br>
+                <img src="images/instagramlogo.png" alt="instagram logo">
+                <p>Assets Page:</p> <a href="assets.html">Click Here</a>
 
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Playfair Display', 'Serif', 'Alegreya Sans', 'Sans Serif']
+            }
+        });
+    </script>
 </body>
 
 </html>

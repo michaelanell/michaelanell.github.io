@@ -2,7 +2,7 @@ function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
   }
 
-  const apiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=40.5141&lon=112.0330&exclude={part}&appid=e9f9a8e29e1d97935134cd5f161d156e';
+  const apiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=40.514114&lon=-112.0330&exclude={part}&appid=e9f9a8e29e1d97935134cd5f161d156e&units=imperial';
   
   fetch(apiURL)
 .then((response) => response.json())

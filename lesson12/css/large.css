@@ -28,9 +28,13 @@
 
     .conditions-summery {
         position: absolute;
-        top: 30%;
+        top: 50%;
         right: 500px;
         background-color: #fff;
         padding: 10px;
+    }
+
+    .upcoming-events {
+        padding-left: 10%;
     }
 }

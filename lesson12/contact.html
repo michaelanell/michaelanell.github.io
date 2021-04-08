@@ -10,12 +10,15 @@
     <link href="css/medium.css" rel="stylesheet" type="text/css">
     <link href="css/large.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normailize.css">
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
 <body class="site-inner">
     <header>
-        <h1>Herriman City Chamber of Commerce</h1>
+        <div class="header-grid">
+            <img id="logo" src="images/town-hall-vector.jpg" alt="logo">
+            <h1 id="heading">Herriman City Chamber of Commerce</h1>
+        </div>
     </header>
     <nav>
         <ul class="navigation">
@@ -30,41 +33,96 @@
     <img class="hero-img" src="images/cityhall.jpg" alt="Hero Image" sizes="50vw"
         srcset="images/cityhall400.jpg 400w, images/cityhall800.jpg 800w, images/cityhall1200.jpg 1200w">
     <main>
-        <div>
-            <h2>Contact Us</h2>
-            <p>Phone: (801) 446-5323</p>
-            <p>Email: info@herriman.org</p>
-            <p>City Hall Address: 5355 West Herriman Main Street
-                Herriman, UT 84096</p>
-        </div>
+
         <form method="get" action="thanks.html">
             <fieldset>
-                <legend>Contact Us:</legend>
-                <label class="top" for="f1">First Name:</label> <br>
-                <input type="text" id="f1" name="first-name" required pattern="[A-Za-z]"> <br>
+                <legend>
+                    <h2>Contact Us:</h2>
+                </legend>
+                <label class="top" for="f1">
+                    <h4 class="form-label">First Name:</h4>
+                </label> <br>
+                <input type="text" id="f1" name="first-name"> <br>
 
-                <label class="top" for="f2">Last Name:</label> <br>
-                <input type="text" id="f2" name="last-name" required pattern="[A-Za-z]"> <br>
+                <label class="top" for="f2">
+                    <h4 class="form-label">Last Name:</h4>
+                </label> <br>
+                <input type="text" id="f2" name="last-name"> <br>
 
-                <label class="top" for="f4">Email:</label> <br>
+                <label class="top" for="f4">
+                    <h4 class="form-label">Email:</h4>
+                </label> <br>
                 <input type="email" id="f4" name="email" placeholder="demo@email.com"> <br>
 
-                <label class="top" for="f5">Phone Number:</label> <br>
+                <label class="top" for="f5">
+                    <h4 class="form-label">Phone Number:</h4>
+                </label> <br>
                 <input type="tel" id="f5" name="phone" required> <br>
 
-                <label class="top" for="f10">Additional Comments:</label> <br>
+                <label class="top" for="f10">
+                    <h3 class="form-label">Additional Comments:</h3>
+                </label> <br>
                 <textarea id="f10" name="comment" rows="5" cols="50" placeholder="Enter Here..."></textarea><br>
 
                 <input class="submit" type="submit" value="Submit" name="submitButton">
             </fieldset>
         </form>
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48544.35923005122!2d-112.06482141884592!3d40.49688656498181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752837ff975dc3d%3A0xb23dcb217417201e!2sHerriman%2C%20UT%2084096!5e0!3m2!1sen!2sus!4v1617781347923!5m2!1sen!2sus"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </main>
-    <footer></footer>
 
+        <div class="contact-grid">
+            <div>
+                <h3>Contact Information</h3>
+                <p>Phone: (801) 446-5323</p>
+                <p>Email: info@herriman.org</p>
+                <p>City Hall Address: 5355 West Herriman Main Street
+                    Herriman, UT 84096</p>
+                <div class="directors">
+                    <h3>Directors:</h3>
+                    <ul class="">
+                        <li class="">
+                            Councilmember Shields</li>
+                        <li class="">Councilmember Smith</li>
+                        <li class="">
+                            Councilmember Ohrn</li>
+                        <li class="">Councilmember Henderson</li>
+                    </ul>
+                </div>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48544.35923005122!2d-112.06482141884592!3d40.49688656498181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752837ff975dc3d%3A0xb23dcb217417201e!2sHerriman%2C%20UT%2084096!5e0!3m2!1sen!2sus!4v1617781347923!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </main>
+    <footer>
+        <!-- Contact Info-->
+        <div class="grid-2">
+            <div id="item-2.1">
+                <h4 class="form-label">Contact Us</h4>
+                <p>Phone: (801) 446-5323</p>
+                <p>Email: info@herriman.org</p>
+                <p>City Hall Address: 5355 West Herriman Main Street
+                    Herriman, UT 84096</p>
+            </div>
+            <!-- Social Media Links-->
+            <div id="item-2-2">
+                <h4 class="form-label">Follow Us</h4>
+                <img src="images/facebooklogo.png" alt="facebook logo"><br>
+                <img src="images/instagramlogo.png" alt="instagram logo">
+                <p>Assets Page:</p> <a href="assets.html">Click Here</a>
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Playfair Display', 'Serif', 'Alegreya Sans', 'Sans Serif']
+            }
+        });
+    </script>
 </body>
 
 </html>
